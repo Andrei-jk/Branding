@@ -1,0 +1,876 @@
+@import "./res.css";
+
+:root {
+  --container-width: 1440px;
+  --container-padding: 110px;
+  --color: #181a3f;
+  --color-text: #555671;
+  --color-hover: #cddceb;
+}
+body {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
+/* ============== header ================ */
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+  /* background-color: #dad9d6; */
+}
+.container-header {
+  padding: 36px 0;
+  display: flex;
+  justify-content: space-between;
+}
+/* счетчик с кнопкой */
+.cart-btn {
+  max-width: 159px;
+  display: flex;
+  align-items: center;
+}
+/* счетчик */
+.counter {
+  margin-right: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+  color: var(--color);
+}
+/* линия */
+hr {
+  max-width: 1440px;
+  height: 1px;
+  background: var(--color-hover);
+}
+/* отключение */
+.none {
+  display: none;
+}
+
+/* ===== We’re a creative design agency from Los Angeles, CA ===== */
+
+.container-agency {
+  /* padding-left: calc((100% - 1440px) / 2 + 110px); */
+  max-width: var(--container-width);
+}
+/* ряд */
+.agency__row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 8px;
+}
+/* блок контента (справо от картинки) */
+.agency__content {
+  max-width: 680px;
+  height: 433px;
+  margin-top: 231px;
+  margin-left: 110px;
+}
+/* заголовок */
+.agency__title {
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 74px;
+  letter-spacing: 2.16px;
+  text-transform: uppercase;
+  max-width: 630px;
+  color: var(--color);
+  margin-bottom: 13px;
+}
+/* текст под заголовком */
+.agency__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 57px;
+  /* margin-bottom: 43px; */
+  max-width: 462px;
+  color: var(--color-text);
+}
+/* кнопки */
+.agency__btns {
+  max-width: 732px;
+  display: flex;
+  column-gap: 28px;
+  /* height: 56px; */
+}
+/* кнопка Contact us */
+.contacts {
+  /* width: 255px; */
+  position: relative;
+  padding: 17px 56px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  background-color: #ff7549;
+  text-align: center;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: background 0.3s ease;
+}
+.contacts:hover {
+  background: #233b99;
+}
+.contacts:active {
+  top: 2px;
+}
+/* кнопка Our Projects */
+.projects {
+  /* width: 275px; */
+  position: relative;
+  padding: 15px 56px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  border: 2px solid var(--color);
+  color: var(--color);
+  transition: background 0.3s ease;
+}
+.projects:hover {
+  background: var(--color-hover);
+}
+.projects:active {
+  top: 2px;
+}
+/* блок для картинки справо */
+.agency__puzzles {
+  position: relative;
+  width: 590px;
+  height: 895px;
+  background-image: url(./../Branding-img/creative/puzzles01.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* надпись на картинке */
+.note {
+  position: absolute;
+  top: 639px;
+  left: 429px;
+}
+
+/* =========== We’re more than just a branding agency =========== */
+
+/* ряд */
+.capabilities__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 240px 0 80px;
+}
+/* заголовок */
+.capabilities__title {
+  max-width: 548px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color);
+}
+/* кнопка Browse All services */
+.browse-services {
+  max-width: 364px;
+  position: relative;
+  display: inline-block;
+  padding: 14px 56px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--color);
+  border: 2px solid var(--color);
+  transition: background-color 0.3s ease-in;
+}
+.browse-services:hover {
+  background-color: var(--color-hover);
+}
+.browse-services:active {
+  top: 2px;
+}
+/* элементы grid capabilities*/
+/* .branding__img,
+.web-design__img,
+.ux-ui__img,
+.graphic-design__img,
+.motion-graphics__img,
+.marketing__img {
+  margin-bottom: 23px;
+} */
+/* .branding__title,
+.web-design__title,
+.ux-ui__title,
+.graphic-design__title,
+.motion-graphics__title,
+.marketing__title {
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  color: var(--color);
+} */
+/* .branding__title p:hover,
+.web-design__title p:hover,
+.ux-ui__title p:hover,
+.graphic-design__title p:hover,
+.motion-graphics__title p:hover,
+.marketing__title p:hover {
+  color: #ff7549;
+} */
+/* .branding__title span,
+.web-design__title span,
+.ux-ui__title span,
+.graphic-design__title span,
+.motion-graphics__title span,
+.marketing__title span {
+  color: #ff7549;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  text-transform: uppercase;
+} */
+
+.text {
+  max-width: 333px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--color-text);
+}
+
+/* сетка */
+.capabilities__grid {
+  width: 100%; /*! это ВАЖНО для адаптива*/
+  display: grid;
+  grid-template-columns: repeat(3, 342px);
+  grid-template-rows: repeat(2, 283px);
+  grid-gap: 74px 97px;
+  justify-items: start; /*прибили внутренние ячейки к левому краю по сетке (выравнивание по началу)*/
+  align-items: end; /*прибили внутренние ячейки к нижнему краю по сетке (выравнивание по нижней линии)*/
+}
+
+/* линия подчеркивания (1220) */
+.line {
+  /* width: 1220px; */
+  height: 1px;
+  background: #dad9d6;
+  margin: 240px auto;
+  background-color: var(--color-hover);
+}
+
+/* ============= Our agency started back in 2002 ============= */
+
+/* ряд */
+.started__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* column-gap: 433px; */
+  margin-bottom: 80px;
+}
+
+/* заголовок */
+.general-zagolovok {
+  max-width: 476px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color);
+}
+/* кнопка */
+.started__btn {
+  max-width: 295px;
+  margin-right: 16px;
+}
+.about-us {
+  position: relative;
+  display: inline-block;
+  padding: 16px 56px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--color);
+  border: 2px solid var(--color);
+}
+.about-us:hover {
+  background-color: var(--color-hover);
+}
+.about-us:active {
+  top: 2px;
+}
+/* тексты our-agency */
+.managers__text-up p,
+.managers__text-down p {
+  max-width: 418px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--color-text);
+}
+/* content our-agency */
+.our-managers__row {
+  display: flex;
+  max-width: 1220px;
+}
+.managers-agency {
+  display: flex;
+  flex-direction: column;
+  row-gap: 105px;
+}
+.managers__text-up {
+  max-width: 468px;
+}
+.managers__text-up p {
+  margin-top: 4px;
+}
+.mozaika {
+  margin-right: 137px;
+}
+.managers__text-down {
+  max-width: 492px;
+  padding: 66px 0 43px 70px;
+}
+
+/* ========== See our latest portfolio projects ========== */
+
+/* ряд */
+.portfolio__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+/* кнопка */
+.portfolio__btn {
+  max-width: 272px;
+}
+.browse-more {
+  position: relative;
+  display: inline-block;
+  padding: 33px 71px 35px 40px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--color);
+  border: 2px solid var(--color);
+}
+.browse-more:hover {
+  background-color: var(--color-hover);
+}
+.browse-more:active {
+  top: 2px;
+}
+
+/* контейнер продуктов */
+.portfolio-products {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+/* продукты */
+.block {
+  display: flex;
+  justify-content: flex-start;
+}
+/* блоки заголовков и текстов (Brand Identity for Haus, ....)*/
+.general-block {
+  margin-left: 16px;
+  max-width: 624px;
+}
+/* заголовки */
+.general-title {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 50px;
+  color: var(--color);
+  margin: 64px 0 20px;
+}
+/* тексты */
+.general-text {
+  max-width: 618px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--color-text);
+}
+/* блоки с датой */
+.general-properties {
+  width: 301px;
+  padding: 78px 0 76px 0;
+}
+.general-properties p,
+span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+}
+.brand__label p span,
+.packaging__label p span,
+.website__label p span,
+.globex__label p span {
+  color: #d9d8d5;
+  /* margin-right: 18px; */
+}
+.brand__label p,
+.packaging__label p,
+.website__label p,
+.globex__label p {
+  color: var(--color);
+}
+/* линия подчеркивания в этом блоке */
+.line-portfolio {
+  height: 1px;
+  background: #dad9d6;
+  margin: 64px auto 0;
+  background-color: var(--color-hover);
+}
+
+/* ========= Have a project? Get in touch today ========= */
+
+.container-project {
+  background: #f0efec;
+  /* background: #e5e5e5; */
+  max-width: var(--container-width);
+  margin: 240px 0;
+}
+.project-row {
+  display: flex;
+  justify-content: space-between;
+}
+.project-content {
+  padding: 213px 0 0 110px;
+}
+.project__contact {
+  position: relative;
+  display: inline-block;
+  padding: 13px 56px 10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #ff7549;
+  transition: background 0.3s ease;
+}
+.project__contact:hover {
+  background: #233b99;
+}
+.project__contact:active {
+  top: 2px;
+}
+.project-btn {
+  padding-top: 55px;
+}
+
+/* A simple, yet effective three step process. */
+
+/* ряд для флексов заголовка и текста */
+.numbers-header__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  align-items: center;
+}
+/* заголовок */
+.numbers-header__title {
+  max-width: 528px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color);
+}
+/* текс в заголовке */
+.numbers-header__text {
+  max-width: 432px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: var(--color-text);
+}
+/* грид-сетка */
+.numbers-content__grid {
+  width: 100%; /*! это ВАЖНО для адаптива*/
+  display: grid;
+  grid-template-columns: repeat(3, 342px);
+  grid-template-rows: repeat(1, 275px);
+  grid-gap: 97px;
+  margin-bottom: 48px;
+}
+/* линия снизу */
+.line-numbers {
+  height: 1px;
+  background: #dad9d6;
+  margin: 40px auto;
+  background-color: var(--color-hover);
+}
+/* элементы сетки numbers-content__grid*/
+/* картинка - цифра */
+.picture {
+  margin-bottom: 23px;
+}
+/* кликабельный заголовок */
+.contents-link {
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  color: var(--color);
+}
+.contents-link p:hover {
+  color: #ff7549;
+}
+.contents-link span {
+  color: #ff7549;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+/* кнопки */
+.numbers-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 28px;
+  align-items: center;
+}
+/* кнопка - Contact us */
+.numbers__contact {
+  position: relative;
+  display: inline-block;
+  width: 255px;
+  padding: 10px 56px;
+  background: #ff7549;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  text-align: center;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  color: #ffffff;
+}
+.numbers__contact:hover {
+  background: #233b99;
+}
+.numbers__contact:active {
+  top: 2px;
+}
+/* кнопка - About our agency */
+.numbers__agency {
+  position: relative;
+  display: inline-block;
+  width: 338px;
+  padding: 9px 56px;
+  border: 2px solid #181a3f;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--color);
+  margin-top: 25px;
+}
+.numbers__agency:hover {
+  background: var(--color-hover);
+}
+.numbers__agency:active {
+  top: 2px;
+}
+
+/* Articles & resources */
+
+/* секция */
+.articles-resources {
+  margin-bottom: 241px;
+}
+/* ряд флексов из заголовка и кнопки */
+.articles-resources__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 80px;
+}
+/* заголовок Articles & resources */
+.articles-resources__title {
+  max-width: 500px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 58px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color);
+}
+/* кнопка Browse more posts */
+.browse-more-posts {
+  position: relative;
+  display: inline-block;
+  padding: 8px 56px;
+  border: 2px solid #181a3f;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--color);
+}
+.browse-more-posts:hover {
+  background: var(--color-hover);
+}
+.browse-more-posts:active {
+  top: 2px;
+}
+/* грид-сетка */
+.articles-resources-content__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 648px);
+  grid-gap: 28px;
+}
+/* лейблы */
+.ar {
+  padding: 30px 25px 18px 0;
+}
+/* текст */
+.art {
+  max-width: 388px;
+  margin-bottom: 17px;
+  /* margin:0 0 17px 0; */
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 39px;
+  color: var(--color);
+}
+/* кликабельные картинки */
+.ar-img:hover {
+  cursor: pointer;
+}
+
+/* Let’s work together */
+
+/* контейнер */
+.container-work-together {
+  background: rgb(240, 239, 236);
+  max-width: var(--container-width);
+  height: 506px;
+}
+/* ряд флексов для заголовка и контактов */
+.work-together-row {
+  display: flex;
+  padding: 180px 154px 110px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
+}
+/* заголовок */
+.work-together-title {
+  max-width: 375px;
+}
+/* ряд почты и телефона */
+.work-together-contacts {
+  margin-right: 44px;
+}
+.contents-link a {
+  color: var(--color);
+}
+
+/* Contents = Branding - Pages - Utility Pages */
+
+/* ряд флексов логотип - остальной контент */
+.content-branding-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 180px;
+  margin-bottom: 160px;
+}
+/* позиционирование флекса с логотипом */
+.branding-logo {
+  top: 0;
+  left: 0;
+}
+.branding-bottom-logo img {
+  margin-bottom: 52px;
+}
+.branding-email {
+  margin-bottom: 24px;
+}
+/* второй флекс - блок флекс-боксов (остальной контент) */
+.other-content-row {
+  max-width: 720px;
+  height: 347px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 132px;
+  /* margin-bottom: 160px; */
+}
+/* h3 */
+.branding-zagolovok {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--color);
+  margin-bottom: 41px;
+}
+/* первый флекс с двумя колонками */
+.columns {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 38px;
+  max-width: 374px;
+}
+/* стилизация ссылок */
+.our-pages a {
+  display: block;
+  margin-bottom: 31px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+/* первая колонка */
+.first-column {
+  max-width: 172px;
+}
+
+/* социальные сети */
+
+/* контейнер большой */
+.container-footer{
+  width: 100%;
+  background: #F0EFEC;
+  margin-top: 0;
+}
+/* контейнер обычный (общий флекс) */
+.block-flex{
+  display: flex;
+  justify-content: space-between;
+}
+/* флекс копирайта */
+.copyright{
+  display: flex;
+  justify-content: space-between;
+  padding: 37px 0 30px 0;
+}
+/* флекс соцсетей */
+.social-media{
+  display: flex;
+  justify-content: space-between;
+  padding: 39px 0 29px 0;
+  column-gap: 28px;
+  align-items: center;
+  max-width: 215px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================= */
+/* сетка */
+
+/* .our-agency__grid {
+  max-width: 1220px; */
+
+/* width: 100%; */
+/* max-width: 1220px; */
+
+/* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, auto)); */
+/* todo =  minmax(90px, auto) = читается так - колонка сожмется минимум до 90пик и максимально растянется автоматически (auto) на ВСЮ отведенную ширину (или например на 1fr) https://www.youtube.com/watch?v=Ee2SWlquOQU*/
+/* ! большое внимание к размерам колонок и рядов = если ставить фиксированные значения (такие как заданы), то браузер НЕ ДАСТ СЖИМАТЬСЯ этим размерам и будет большой вопрос с адаптивом = нада использовать (как в записи выше) или auto-fit или auto-fill и ставить minmax ОТ и ДО (https://www.youtube.com/watch?v=Wq5tzAaYfxA) */
+/* grid-template-columns: 1fr  minmax( 1fr, auto)  1fr; */
+/* grid-template-columns: minmax(260px auto) 260px 492px; */
+/* grid-template-columns: 468px 260px 492px; */
+/* grid-template-rows: 260px 234px 234px 259.81px; */
+
+/* grid-template-rows: repeat(auto-fit, minmax(250px, auto));
+  margin: 0 auto;  */
+
+/* для того, чтобы разместить нестандартые блоки в грид-сетке, можно воспользоваться линиями сетки или областями. При использовании областей, сначало распределяются они в grid-template-areas так, как они будут располагаться в сетке и получают названия. Это не классы, не теги, это любые присвоенные названия областям ... (см. ниже) */
+/* grid-template-areas:
+    "text-up puzzles designer"
+    "foto puzzles designer"
+    "foto puzzles mozaika"
+    "empty-area puzzles text-down";
+} */
+/* ... далее тегам или как в данном примере классам, приписываются те самые произвольные названия областей. Т е например класс .managers__text-up будет занимать ВСЮ область с именем text-up, а класс .managers__foto, будет занимать ВСЮ область foto и т д. Для помощи https://www.youtube.com/watch?v=vExgsxs9r-M (CSS Grid - самая понятная инструкция с примерами по гридам (сеткам) в CSS) */
+/* .managers__text-up {
+  grid-area: text-up;
+}
+.managers__foto {
+  grid-area: foto;
+}
+.empty-area {
+  grid-area: empty-area;
+}
+.manager__puzzles {
+  grid-area: puzzles;
+}
+.designer {
+  grid-area: designer;
+}
+.mozaika {
+  grid-area: mozaika;
+}
+.managers__text-down {
+  grid-area: text-down;
+} */
+/* ! очень важный момент = когда контейнер равен ширине экрана, то надо ОБЯЗАТЕЛЬНО обращать внимание на боковой скрол. Он примерно равен 17рх и СДВИГАЕТ на эти 17 контейнер. Надо преключать на мобильное отображение и тогда скрола не видно */
+/* .managers__text-down {
+  justify-self: right; */
+/* !очень полезный прием = если надо содержимое какой то ячейки выстоить не так как в остальных, то используют justify-self: и align-self:, а также можно заменить place-self (https://www.youtube.com/watch?v=GG2P2oPTtDs (КАК выровнять контент в отдельной ячейке в CSS Grid?)*/
+/* align-self: end;
+}
+.mozaika{
+  display: block;
+  max-width: 492px;
+  max-height: 236px;
+}
+.designer{
+  max-height: 492px;
+} */
+/* ==================================================== */

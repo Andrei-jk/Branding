@@ -1,0 +1,672 @@
+@media (max-width: 1435px) {
+   /* Our agency started back in 2002 */
+  .managers-agency {
+    justify-content: space-between;
+  }
+  /* section class="capabilities" */
+  .capabilities__grid {
+    grid-gap: 74px 17px;
+  }
+  /*section class="numbers */
+  .numbers-content__grid {
+  grid-gap: 54px;
+}
+ }
+@media (max-width: 1350px) {
+  /* section class="agency" */
+  .agency__row {
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .agency__puzzles {
+    rotate: 270deg;
+    margin: -8%;
+  }
+  .note {
+    rotate: 90deg;
+    margin-top: -222px;
+    margin-left: -560px;
+    width: 296px;
+  }
+  .agency__content {
+    margin: 0;
+  }
+ 
+  /* section class="started" */
+  .managers__text-down {
+    max-width: 492px;
+    padding: 36px 0 0 40px;
+  }
+  .managers__text-up {
+    max-width: 468px;
+    padding: 30px;
+  }
+/* section class="numbers */
+  .numbers-content__grid {
+    grid-gap: 18px;
+}
+}
+/* далее некоторые неудобства возникают с блоком .agency__puzzles, потому что его перевернули на 90 градусов и соответственно параметры ширины и высоты надо учитывать в соответствии с поворотом блока. Также перестроено положение картинки с классом note*/
+@media (max-width: 1205px) {
+  /* section class="agency" */
+  .agency__puzzles {
+    width: 50%;
+    /* !Очень важный и полезный прием = если картинка является background-ом в блоке с ФИКСИРОВАННЫМИ РАЗМЕРАМИ и надо чтобы она адаптировалась, то надо этому блоку указать меньшую ширину, но в %, а затем выровнять background-position и запретить повторение  */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  .note {
+    margin-left: -523px;
+    width: 215px;
+  }
+  /* section class="capabilities" */
+  .capabilities__row {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+   margin-bottom: 80px;
+  }
+  .capabilities__title {
+    display: block;
+    max-width: 478px;
+    /* align-items: center; */
+    text-align: center;
+  }
+  .capabilities__grid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* !ОЧЕНЬ ПОЛЕЗНЫЙ прием == дело в том, что когда начинается адаптив грида, возможен вариант, когда контейнер в котором находится грид адаптируется, а САМА СЕТКА нет и она выходит за пределы контейнера и приходится манипулировать  gap-ми и делать много медиа-точек. Чтобы решить этот вопрос, надо применить размерность в фреймах (fr) */
+    /* grid-template-columns: repeat(2, 342px); */
+    grid-template-rows: repeat(3, 283px);
+    grid-gap: 74px 157px;
+  }
+  /* section class="started" */
+  .managers__text-up {
+    padding: 0 20px 0 0;
+    /* margin-top: 0; */
+  }
+  .managers-agency {
+    justify-content: flex-start;
+    row-gap: 122px;
+  }
+  .managers__text-down {
+    padding: 3px 0 0 3px;
+    text-align: end;
+  }
+  .managers__text-up p,
+  .managers__text-down p {
+    line-height: 27px;
+  }
+
+/* section class="numbers */
+.numbers-header__row {
+    flex-direction: column;
+    column-gap: 185px;
+    row-gap: 30px;
+}
+
+.numbers-content__grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 342px);
+    /* grid-gap: 25px; */
+    text-align: center;
+}
+.text{
+  max-width: 440px;
+  margin: 50px auto;
+}
+.numbers-header__title, .numbers-header__text{
+  text-align: center;
+}
+
+/* section class="articles-resources" */
+.articles-resources-content__grid{
+  display: grid;
+   grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 648px);
+  grid-gap: 100px;
+}
+.grid-elements{
+  max-width: 388px;
+  margin: 0 auto;
+
+}
+.articles-resources__row{
+  flex-direction: column;
+  row-gap: 50px;
+}
+}
+
+@media (max-width: 1150px) {
+  /* section class="agency" */
+  .agency__puzzles {
+    /* margin: -150px; */
+    margin-top: -9%;
+  }
+  .agency__title {
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 59px;
+    margin-bottom: 27px;
+  }
+  .agency__content {
+    margin-top: -41px;
+  }
+  /* section class="work-together */
+  .work-together-row {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 30px;
+}
+.work-together-contacts {
+    margin:0 auto;
+}
+.work-together-title {
+    max-width:100%;
+}
+}
+@media (max-width: 1025px) {
+  /* section class="agency" */
+  .agency__puzzles {
+    width: 55%;
+    height: 843px;
+  }
+  /* section class="capabilities" */
+  .capabilities__grid {
+    grid-gap: 75px 125px;
+  }
+  /* section class="started" */
+  .started__title {
+    text-align: center;
+  }
+  .started__row {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 35px;
+  }
+  
+/*  section class="project" */
+  .project-content {
+    padding: 145px 0 0 50px;
+}
+/* <section class="contents"> */
+.content-branding-row{
+flex-direction: column;
+align-items: center;
+row-gap: 50px;
+}
+/* <footer class="footer"> */
+.block-flex {
+      flex-direction: column;
+    align-items: center;
+}
+}
+@media (max-width: 1000px){
+  /* section class="started" */
+  .manager__puzzles, .mozaika{
+    display: none;
+  }
+.design-block{
+  display: flex;
+  flex-direction: column;
+  row-gap: 136px;
+  justify-content: flex-end;
+}
+
+/* See our latest portfolio projects */
+.portfolio__row {
+      row-gap: 77px;
+    flex-direction: column;
+    /* padding: 0 25px; */
+}
+.portfolio__title{
+ 
+  text-align: center;
+}
+}
+@media (max-width: 901px) {
+  /* section class="agency" */
+  .agency__puzzles {
+    width: 50%;
+    height: 668px;
+    margin: -5%;
+  }
+  .agency__content {
+    margin-top: -15px;
+  }
+  .note {
+    margin-left: -501px;
+    width: 163px;
+    margin-top: -321px;
+  }
+  /* section class="capabilities" */
+  .capabilities__grid {
+    grid-gap: 70px 25px;
+  }
+  /* section class="work-together */
+  .work-together-row{
+     padding: 110px 20px;
+  }
+}
+@media (max-width: 769px) {
+  /* section class="agency" */
+  .agency__puzzles {
+    width: 47%;
+    height: 542px;
+    margin: -5%;
+  }
+  .note {
+    margin-left: -482px;
+    width: 120px;
+    margin-top: -382px;
+  }
+  .agency__content {
+    max-width: 553px;
+  }
+  .agency__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 59px;
+    margin-bottom: 0px;
+  }
+  .agency__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 33px;
+    max-width: 583px;
+  }
+  /* section class="capabilities" */
+  .capabilities__grid {
+    max-width: 342px;
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* !ОЧЕНЬ ПОЛЕЗНЫЙ прием == дело в том, что когда начинается адаптив грида, возможен вариант, когда контейнер в котором находится грид адаптируется, а САМА СЕТКА нет и она выходит за пределы контейнера и приходится манипулировать  gap-ми и делать много медиа-точек. Чтобы решить этот вопрос, надо применить размерность в фреймах (fr) */
+    grid-template-rows: repeat(6, 283px);
+    margin: 0 auto;
+  }
+/* section class="started */
+.managers-agency {
+    row-gap: 60px;
+}
+.design-block {
+    row-gap: 70px;
+}
+
+.managers__text-up p, .managers__text-down p {
+    line-height: 24px;
+}
+
+/* See our latest portfolio projects */
+.brand__label p{
+width: 139px;  /* word-break:break-all; */
+}
+.website__label p{
+  width: 139px;
+}
+/* section class="project" */
+.project-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.project-title{
+  text-align: center;
+      font-weight: 700;
+    font-size: 30px;
+    line-height: 47px;
+}
+.project-btn{
+  padding-top: 20px;
+  text-align: center;
+}
+.project-img{
+  width: 50%;
+    padding-bottom: 50px;
+
+}
+.project-content {
+    padding: 35px 0;
+}
+/* section class="articles-resources" */
+.articles-resources__title{
+  text-align: center;
+}
+.articles-resources-content__grid{
+  row-gap: 80px;
+}
+/* <section class="contents"> */
+/* .content-branding-row{
+flex-direction: column;
+align-items: center;
+row-gap: 50px;
+} */
+.branding-zagolovok{
+  font-weight: 600;
+}
+.other-content-row{
+  flex-direction: column;
+  align-items: center;
+}
+.columns{
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.branding-zagolovok{
+  text-align: center;
+}
+.our-pages{
+  text-align: center;
+}
+/*  <footer class="footer"> */
+.container-footer {
+
+    margin-top: 650px;
+}
+}
+@media (max-width: 650px) {
+  /* header class="header" */
+  .desktop-btn-open img {
+    width: 42px;
+    height: 18px;
+  }
+  .container-header {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+}
+@media (max-width: 500px) {
+  /* header class="header" */
+  .header-logo img {
+    max-width: 300px;
+  }
+}
+@media (max-width: 426px) {
+  .container {
+    width: 100%;
+    padding: 0 25px;
+  }
+  /* header class="header" */
+  .counter {
+    font-size: 12px;
+    margin-right: 30px;
+  }
+  .desktop-btn-open img {
+    width: 30px;
+  }
+  /* section class="agency" */
+  .agency__btns {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+  }
+  .agency__content {
+    max-width: 300px;
+  }
+  .agency__title {
+    text-align: center;
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+  .agency__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 61px;
+  }
+  .agency__puzzles {
+    width: 50%;
+    height: 317px;
+    margin: 0;
+  }
+  .contacts {
+    max-width: 340px;
+    font-size: 12px;
+    padding: 12px 56px;
+  }
+  .projects {
+    max-width: 340px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 56px;
+  }
+  .note {
+    margin-left: -464px;
+    margin-top: -492px;
+    width: 80px;
+  }
+  /* section class="capabilities" */
+  .capabilities__grid {
+    text-align: center;
+  }
+  .capabilities__title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 37px;
+    text-align: center;
+  }
+  .capabilities__row {
+    padding: 100px 0 80px;
+  }
+  .browse-services {
+    padding: 4px 7px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    border: 1px solid var(--color);
+  }
+
+  /* section class="started */
+
+.our-managers__row {
+       padding: 0 25px;
+    flex-direction: column;
+    row-gap: 50px;
+}
+.design-block {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+.line{
+  margin: 100px 30px;
+}
+/* section class="portfolio" */
+.packaging__label p{
+  width: 116px;
+}
+.globex__label p{
+  width: 116px;
+}
+.block{
+  flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.general-properties p{
+  width: 100%;
+  padding:0;
+}
+.general-block{
+  margin: 0 auto;
+  width: 300px;
+}
+.general-properties{
+  padding: 0;
+}
+.line-portfolio {
+    height: 1px;
+    background: #dad9d6;
+    margin: 64px auto;
+    background-color: var(--color-hover);
+    /* width: 100%; */
+}
+
+/* section class="project"  */
+.project-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 40px;
+}
+.project__contact{
+  font-size: 14px;
+}
+.text{
+  max-width: 330px;
+}
+/* section class="numbers" */
+.numbers-btn{
+  flex-direction: column;
+  row-gap: 50px;
+}
+/* section class="articles-resources" */
+.ar-img{
+  margin-bottom: 50px;
+}
+/*  <footer class="footer"> */
+.copyright{
+  display: block;
+  text-align: center;
+  padding-top: 27px;
+}
+.copyright p{
+  margin-bottom: 20px;
+}
+.social-media{
+  padding-top: 0;
+}
+}
+
+@media (max-width: 376px) {
+  /* section class="agency" */
+  .agency__puzzles {
+    width: 57%;
+    height: 317px;
+    margin: 0;
+  }
+  .agency__title {
+    margin-bottom: 27px;
+  }
+  .container-header {
+    row-gap: 5px;
+    padding: 26px 0;
+  }
+  .counter {
+    font-size: 16px;
+  }
+  /* section class="capabilities" */
+  .capabilities__grid {
+    max-width: 316px;
+  }
+  .capabilities__title {
+    font-size: 18px;
+  }
+/* See our latest portfolio projects */ 
+.browse-more {
+     padding: 23px 61px 25px 30px;
+    font-weight: 500;
+
+}
+  
+}
+@media (max-width: 321px) {
+  /* header class="header" */
+  .header-logo img {
+    max-width: 215px;
+  }
+  .counter {
+    font-size: 10px;
+    margin-right: 19px;
+  }
+  .desktop-btn-open img {
+    width: 27px;
+  }
+  /* section class="agency" */
+  .agency__puzzles {
+    width: 57%;
+    height: 266px;
+    margin: 0;
+  }
+  .note {
+    margin-left: -463px;
+    margin-top: -518px;
+    width: 78px;
+  }
+  .branding__text,
+  .web-design__text,
+  .ux-ui__text,
+  .graphic-design__text,
+  .motion-graphics__text,
+  .marketing__text {
+    font-size: 15px;
+    line-height: 26px;
+  }
+/* section class="started */
+.started__title{
+      font-weight: 700;
+    font-size: 36px;
+}
+.about-us{
+  padding: 16px 26px;
+}
+/* See our latest portfolio projects */
+.packaging__title{
+  font-style: 36px;
+  font-weight: 700;
+}
+.general-block{
+  width: 100%;
+  /* width: 270px; */
+}
+
+/* section class="project" */
+
+.container-project {
+    margin: 40px 0;
+}
+.numbers__contact{
+  width: 230px;
+  padding: 10px;
+      font-weight: 700;
+    font-size: 15px;
+}
+.numbers__agency{
+  width: 230px;
+  padding: 10px;
+      font-weight: 700;
+    font-size: 15px;
+}
+/* section class="articles-resources" */
+.ar-img{
+  max-width: 250px;
+}
+.art{
+  max-width: 300px;
+  font-size: 25px;
+}
+/* section class="work-together */
+.contents-link a{
+  font-size: 25px;
+}
+ /* Let’s work together */
+.branding-logo{
+  margin: 0 auto;
+  width: 100%;
+}
+.branding-logo a{
+  font-size: 24px;
+/* text-align: center; */
+/* align-items: center; */
+}
+.branding-tel{
+  text-align: center;
+}
+}
