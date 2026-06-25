@@ -3,4 +3,4 @@
 ## CSS 3
 ## JS
 
-can you view [this project](https://pages.github.com/)
+can you view [this project](https://andrei-jk.github.io/Branding/)
